@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
     <title>LuxCar Exclusive</title>
 </head>
+
 <body>
     <header>
         <img src="./imagens/logo-luxcar.png" alt="logo-luxcar">
@@ -15,12 +25,12 @@
                 <li>Carros</li>
                 <li>Fale Conosco</li>
             </ul>
-        </nav>
-    </header>
-    <section>
+        </header>
+    </nav>
+    <section class="container">
         <div class="lista">
-            <div class="item">
-                <div class="carro-img">  
+            <div class="item ativo">
+                <div class="carro-img">
                     <img src="./imagens/ferrari.png" alt="img-ferrari">
                 </div>
                 <div class="conteudo">
@@ -31,24 +41,75 @@
                         Ferrari
                     </h2>
                     <p class="carro-descricao">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.Veritatis sint maxime doloribus error! Ea et quia iusto ullam nemo,laudantium laboriosam. Molestias, fugit quam. Quod quos sequi architecto. Tempore, ratione.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.Veritatis sint maxime doloribus error!
+                        Ea et quia iusto ullam nemo,laudantium laboriosam. Molestias, fugit quam. Quod quos sequi
+                        architecto. Tempore, ratione.
                     </p>
-                    <button>
-                        saiba mais
+                    <button class="informacao">
+                        SAIBA MAIS
+                    </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="carro-img">
+                    <img src="./imagens/lamborghini.png" alt="img-lambo">
+                </div>
+                <div class="conteudo">
+                    <p class="carro-info">
+                        2019
+                    </p>
+                    <h2>
+                        Lamborghini
+                    </h2>
+                    <p class="carro-descricao">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.Veritatis sint maxime doloribus error!
+                        Ea et quia iusto ullam nemo,laudantium laboriosam. Molestias, fugit quam. Quod quos sequi
+                        architecto. Tempore, ratione.
+                    </p>
+                    <button class="informacao">
+                        SAIBA MAIS
+                    </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="carro-img">
+                    <img src="./imagens/porshe-911.png" alt="img-porshe">
+                </div>
+                <div class="conteudo">
+                    <p class="carro-info">
+                        Porshe
+                    </p>
+                    <h2>
+                        911 Turbo s
+                    </h2>
+                    <p class="carro-descricao">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.Veritatis sint maxime doloribus error!
+                        Ea et quia iusto ullam nemo,laudantium laboriosam. Molestias, fugit quam. Quod quos sequi
+                        architecto. Tempore, ratione.
+                    </p>
+                    <button class="informacao">
+                        SAIBA MAIS
                     </button>
                 </div>
             </div>
         </div>
         <div class="seta">
-            <button><img src="./imagens/setas.png" alt="seta-esquerda"></button>
-            <button><img src="./imagens/setas.png" alt="seta-direita"></button>
+            <button id="esquerdo" class="botaoesq"><img src="./imagens/setas.png" alt="seta-esquerda"></button>
+            <button id="direito"><img src="./imagens/setas.png" alt="seta-direita"></button>
         </div>
+
         <div class="indicadores">
             <div class="numero">01</div>
             <ul>
                 <li class="ativo"></li>
+                <li></li>
+                <li></li>
             </ul>
         </div>
     </section>
+    <script src="./scripts.js"></script>
 </body>
+
 </html>
