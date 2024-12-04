@@ -35,15 +35,20 @@ header {
     gap: 100px;
     align-items: center;
     z-index: 2;
-
 }
 header img {
-    width: 250px;
+    width: 350px;
 }
 header nav > ul {
     display: flex;
     gap: 150px;
 }
+header nav > ul > li:hover {
+    color: #DBCDC6;
+    text-decoration: underline;
+}
+
+
 section {
     background-image: radial-gradient(#586F6B, #1D1E2C);
     height: 100vh;
@@ -95,6 +100,7 @@ section .carro-img::before {
 section .conteudo {
     position: absolute;
     right: 100px;
+    top: 100px;
     width: 70%;
     height: 100%;
     display: flex;
@@ -128,7 +134,6 @@ h2 {
     height: 35px;
     border-radius: 30px;
 }
-
 .seta{
     width: 70vw;
     position: absolute;
@@ -191,14 +196,14 @@ h2 {
 }
 
 section {
-
+    
     & .lista {
         --calculo: 1;
         & .item {
             transform: translateX(calc(100vw * var(--calculo)));
             transition: 0.5s;
             opacity: 0;
-
+            
             & .carro-img {
                 & img{
                     transform: rotate(0);
@@ -229,13 +234,13 @@ section {
             transform: translateX(0);
             transition: 0.5s;
             opacity: 1;
-
+            
             & .carro-img {
                 & img{
                     transform: rotate(-20deg);
                 }
             }
-
+            
             & .conteudo {
                 & .carro-info, h2, .carro-descricao, .informacao {
                     transform: translateX(0);
